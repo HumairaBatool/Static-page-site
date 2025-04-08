@@ -7,7 +7,6 @@ export async function getStaticProps() {
     props: {
       contentList: data || [],
     },
-    revalidate: 60, // Revalidate every 60s as a fallback
   };
 }
 
@@ -30,14 +29,3 @@ export default function Home({ contentList }) {
 }
 
 
-// // pages/index.js
-// import React from 'react';
-
-// export default function Home() {
-//   return (
-//     <div style={{ padding: '2rem', color: 'black', fontFamily: 'Arial' }}>
-//       <h1>Hello Supabase!</h1>
-//       <p>This is a basic static page that works.</p>
-//     </div>
-//   );
-// }
